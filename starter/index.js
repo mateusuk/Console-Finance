@@ -116,7 +116,7 @@ var finances = [
   let change = [];
   for (let i = 0; i < finances.length - 1; i++) {
     // change in profit/loses
-    change.push(finances[i + 1][1] - finances[i][1]);
+    change[i] = finances[i + 1][1] - finances[i][1];
     // total change profit/loses
     totalChange = totalChange + change[i]
   } 
